@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Крестики-нолики</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game">
+    
+    <!-- Обертка для левой и правой колонки -->
+    <div class="game-content">
+      
+      <!-- ЛЕВАЯ КОЛОНКА: Имена, Ход, Котик -->
+      <div class="left-panel">
+        <h1>Крестики-нолики</h1>
+        <div class="players-input">
+          <input type="text" id="player1" placeholder="Имя Игрока 1 (X)" value="Игрок 1">
+          <input type="text" id="player2" placeholder="Имя Игрока 2 (O)" value="Игрок 2">
+        </div>
+        <div class="status" id="status">Ход: Игрок 1</div>
+        <img src="cat.gif" id="win-gif" class="win-gif" style="display: none;">
+      </div>
+
+      <!-- ПРАВАЯ КОЛОНКА: Игровое поле -->
+      <div class="right-panel">
+        <div class="board" id="board">
+          <div class="cell" data-index="0"></div>
+          <div class="cell" data-index="1"></div>
+          <div class="cell" data-index="2"></div>
+          <div class="cell" data-index="3"></div>
+          <div class="cell" data-index="4"></div>
+          <div class="cell" data-index="5"></div>
+          <div class="cell" data-index="6"></div>
+          <div class="cell" data-index="7"></div>
+          <div class="cell" data-index="8"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Кнопка сброса -->
+    <button id="reset">Сброс</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
